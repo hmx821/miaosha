@@ -18,7 +18,8 @@ public enum CodeMsg {
     MOBILE_BLANK(500212, "手机号不能为空"),
     MOBILE_ERROR(500213, "手机号格式错误"),
     MOBILE_NOT_EXIST(500214, "手机号不存在"),
-    PASSWORD_ERROR(500215, "密码错误");
+    PASSWORD_ERROR(500215, "密码错误"),
+    TOKEN_ERROR(500216, "token错误");
     //商品模块 5003XX
 
     //订单模块 5004XX
