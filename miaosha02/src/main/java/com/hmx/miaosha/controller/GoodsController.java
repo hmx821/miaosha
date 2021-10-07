@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * @program: miaosha
  * @description:
@@ -25,14 +27,7 @@ public class GoodsController {
     private MiaoshaUserService miaoshaUserService;
 
     @RequestMapping("/to_list")
-    public String toList(Model model,
-                         @CookieValue(value = MiaoshaUserService.COOKIE_NAME_TOKEN, required = false) String cookieToken,
-                         @RequestParam(value = MiaoshaUserService.COOKIE_NAME_TOKEN, required = false) String paramToken) {
-        if (StringUtils.isBlank(cookieToken) && StringUtils.isBlank(paramToken)) {
-            return "login";
-        }
-        String token = StringUtils.isBlank(paramToken) ? cookieToken : paramToken;
-        MiaoshaUser user = miaoshaUserService.getByToken(token);
+    public String toList(Model model, MiaoshaUser user) {
         model.addAttribute("user", user);
         return "goods_list";
     }
