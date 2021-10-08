@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/miaosha.iml" filepath="$PROJECT_DIR$/miaosha.iml" />
       <module fileurl="file://$PROJECT_DIR$/miaosha01/miaosha01.iml" filepath="$PROJECT_DIR$/miaosha01/miaosha01.iml" />
       <module fileurl="file://$PROJECT_DIR$/miaosha02/miaosha02.iml" filepath="$PROJECT_DIR$/miaosha02/miaosha02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miaosha03/miaosha03.iml" filepath="$PROJECT_DIR$/miaosha03/miaosha03.iml" />
     </modules>
   </component>
 </project>

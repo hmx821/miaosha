@@ -9,18 +9,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="miaosha01" />
         <module name="miaosha02" />
+        <module name="miaosha03" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="miaosha" target="1.8" />
       <module name="miaosha01" target="1.8" />
       <module name="miaosha02" target="1.8" />
+      <module name="miaosha03" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="miaosha01" options="-parameters" />
       <module name="miaosha02" options="-parameters" />
+      <module name="miaosha03" options="-parameters" />
     </option>
   </component>
 </project>
