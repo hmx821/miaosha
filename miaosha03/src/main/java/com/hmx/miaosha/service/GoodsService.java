@@ -27,4 +27,8 @@ public class GoodsService {
     public GoodsVo getGoodsVoByGoodsId(long goodsId) {
         return goodsMapper.getGoodsVoByGoodsId(goodsId);
     }
+
+    public void reduceStock(GoodsVo goods) {
+        goodsMapper.reduceStock(goods.getId());
+    }
 }

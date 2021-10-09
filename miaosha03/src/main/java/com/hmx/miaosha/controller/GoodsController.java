@@ -1,20 +1,14 @@
 package com.hmx.miaosha.controller;
 
 import com.hmx.miaosha.domain.MiaoshaUser;
-import com.hmx.miaosha.domain.User;
 import com.hmx.miaosha.service.GoodsService;
-import com.hmx.miaosha.service.MiaoshaUserService;
 import com.hmx.miaosha.vo.GoodsVo;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -58,7 +52,7 @@ public class GoodsController {
         }
 
         model.addAttribute("miaoshaStatus", miaoshaStatus);
-        model.addAttribute("remianSeconds", remainSeconds);
+        model.addAttribute("remainSeconds", remainSeconds);
         return "goods_detail";
     }
 

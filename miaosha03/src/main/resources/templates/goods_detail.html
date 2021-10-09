@@ -72,8 +72,10 @@ $(function(){
 });
 
 function countDown(){
+    //debugger;
 	var remainSeconds = $("#remainSeconds").val();
 	var timeout;
+	//debugger;
 	if(remainSeconds > 0){//秒杀还没开始，倒计时
 		$("#buyButton").attr("disabled", true);
 		timeout = setTimeout(function(){
